@@ -237,6 +237,9 @@ export default {
   watch: {
     datetime: function() {
       this.init()
+    },
+    display: function() {
+      this.$emit('displayed', null)
     }
   }
 }
